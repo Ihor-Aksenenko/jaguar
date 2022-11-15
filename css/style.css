@@ -174,9 +174,7 @@ body {
    color: #2E8B57;
 }
 
-.page {
-   padding-bottom: 100px;
-}
+.page {}
 
 .page__container {
    position: relative;
@@ -294,7 +292,9 @@ body {
    }
 }
 
-.page__invitation {}
+.page__invitation {
+   margin-bottom: 140px;
+}
 
 .invitation {}
 
@@ -354,4 +354,56 @@ body {
    .invitation__video iframe {
       width: 100%;
    }
+}
+
+.page__benifit {
+   margin-bottom: 140px;
+}
+
+.benifit__title {
+   font-weight: 600;
+   font-size: 25px;
+   text-align: center;
+   margin-bottom: 60px;
+}
+
+.benifit__body {
+   display: inline-flex;
+   justify-content: center;
+   gap: 20px;
+   flex-wrap: wrap;
+}
+
+.benifit__card {
+   max-width: 360px;
+   background: #FFFFFF;
+   border: 1px solid rgba(0, 0, 0, 0.1);
+   border-radius: 10px;
+   padding: 23px;
+}
+
+.card {}
+
+.card__image {
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   background-color: rgb(141, 139, 139);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0 auto 15px auto;
+}
+
+.card__icon {
+   width: 40px;
+}
+
+.card__icon img {
+   max-width: 100%;
+}
+
+.card__text {
+   text-align: center;
+   line-height: 1.5;
 }
