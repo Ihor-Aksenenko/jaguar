@@ -174,8 +174,22 @@ body {
    color: #2E8B57;
 }
 
+.page {
+   padding-bottom: 100px;
+}
+
+.page__container {
+   position: relative;
+}
+
+.main {
+   border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+
 .page__main {
    padding-top: 70px;
+   margin-bottom: 140px;
 }
 
 .main__body {
@@ -271,9 +285,73 @@ body {
 @media(max-width: 767px) {
    .page__main {
       padding-top: 50px;
+      padding-bottom: 50px;
+      margin-bottom: 70px;
    }
 
    .main__body {
       flex-direction: column-reverse;
+   }
+}
+
+.page__invitation {}
+
+.invitation {}
+
+.invitation__body {
+   display: flex;
+}
+
+.invitation__work-in-slovakia {
+   flex: 0 1 50%;
+}
+
+.work-in-slovakia {
+   display: flex;
+   flex-direction: column;
+}
+
+.work-in-slovakia__text {
+   flex: 0 1 50%;
+   /* border: 1px solid red; */
+   /* display: flex;
+   align-items: flex-end; */
+   font-weight: 600;
+   font-size: 25px;
+   line-height: 120%;
+}
+
+.work-in-slovakia__text span {
+   color: #2E8B57;
+}
+
+.work-in-slovakia__action {
+   flex: 0 1 50%;
+   /* border: 1px solid green; */
+   padding-top: 30px;
+   display: flex;
+   align-items: flex-start;
+   gap: 40px;
+}
+
+.work-in-slovakia__button {}
+
+.button {}
+
+.invitation__video {
+   flex: 0 1 50%;
+}
+
+.invitation__video iframe {
+   max-width: 100%;
+}
+
+@media(max-width: 767px) {
+   .invitation__body {
+      flex-direction: column-reverse;
+   }
+
+   .invitation__video iframe {
+      width: 100%;
    }
 }
