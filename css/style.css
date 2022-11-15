@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700;900&display=swap');
 
 body {
    font-family: 'Roboto Slab', serif;
@@ -8,14 +8,13 @@ body {
    overflow: hidden;
    position: relative;
    min-height: 100%;
-   background-color: rgb(229, 229, 229);
+   background-color: #F8F8F8;
 }
 
 [class*="__container"] {
    max-width: 1140px;
    margin: 0 auto;
    padding: 0px 10px;
-   background-color: rgb(248, 248, 248);
 }
 
 .header {
@@ -175,7 +174,106 @@ body {
    color: #2E8B57;
 }
 
-.page__text {
-   padding-top: 80px;
-   background-color: lightgray;
+.page__main {
+   padding-top: 70px;
+}
+
+.main__body {
+   /* border: 1px solid red; */
+   display: flex;
+}
+
+.main__become-part {
+   /* border: 1px solid blue; */
+   flex: 0 1 50%;
+}
+
+.become-part {
+   display: flex;
+   flex-direction: column;
+}
+
+.become-part__text {
+   flex: 0 1 50%;
+   border: 1px solid red;
+   display: flex;
+   align-items: flex-end;
+   font-weight: 600;
+   font-size: 37px;
+   line-height: 120%;
+}
+
+.become-part__text span {
+   color: #2E8B57;
+}
+
+.become-part__actions {
+   flex: 0 1 50%;
+   border: 1px solid green;
+   padding-top: 30px;
+   display: flex;
+   align-items: flex-start;
+   gap: 40px;
+}
+
+.main__image {
+   flex: 0 1 50%;
+   /* border: 1px solid green; */
+   /* width: 500px; */
+}
+
+.main__image img {
+   max-width: 100%;
+}
+
+.button {
+   border-radius: 4px;
+   font-weight: 500;
+   line-height: 1.5;
+   color: white;
+   letter-spacing: 0.02em;
+   display: inline-block;
+   padding: 15px 30px;
+   position: relative;
+   background-color: #2E8B57;
+   font-size: 18px;
+}
+
+.button span {
+   position: relative;
+   z-index: 2;
+}
+
+.button:before {
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   opacity: 0;
+   border-radius: 4px;
+   transition: opacity 0.3s ease 0s;
+   background-color: #207a47;
+}
+
+.button:hover::before {
+   opacity: 1;
+}
+
+.become-part__play-video div {
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   border: 1px solid rgb(197, 215, 250);
+}
+
+@media(max-width: 767px) {
+   .page__main {
+      padding-top: 50px;
+   }
+
+   .main__body {
+      flex-direction: column-reverse;
+   }
 }
